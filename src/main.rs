@@ -8,7 +8,6 @@ fn main() {
         eprintln!("Problem parsing arguments: {err}");
         process::exit(1);
     });
-    println!("{:?}", config);
     if let Err(e) = tree::run(config) {
         eprintln!("Application error: {e}");
         process::exit(1);
